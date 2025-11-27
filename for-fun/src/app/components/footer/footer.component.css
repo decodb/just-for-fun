@@ -1,0 +1,46 @@
+.footer {
+  position: fixed;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  height: var(--footer-height);
+  padding: 1rem;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  display: none;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer ul li a {
+    position: relative;
+    padding: 1rem 1.5rem;
+}
+
+.footer ul li a.active {
+    color: var(--electric-blue);
+}
+
+.footer ul li a.active::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2.5px;
+    background-color: var(--electric-blue);
+}
+
+@media (max-width: 600px) {
+    .footer {
+        display: flex;
+        height: 4rem;
+    }
+}

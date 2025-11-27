@@ -1,0 +1,7 @@
+<div class="footer">
+    <ul>
+        @for(item of FOOTER_ITEMS; track item.id) {
+            <li><a [routerLink]="item.route" routerLinkActive="active">{{ item.name }}</a></li>
+        }
+    </ul>
+</div>

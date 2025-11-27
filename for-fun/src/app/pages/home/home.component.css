@@ -1,0 +1,261 @@
+#hero {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+}
+
+section .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+section .top h2 {
+    font-size: 4rem;
+    width: 90%;
+    text-align: center;
+    line-height: 3.75rem;
+    font-weight: 500;
+}
+
+section .top p {
+    color: var(--grey);
+}
+
+section .top a {
+  background: linear-gradient(to right, var(--midnight-blue), var(--electric-blue));
+  background-size: 200% 100%;
+  background-position: left;
+  color: var(white);
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  transition: background-position 0.5s ease;
+}
+
+section .top a:hover {
+  background-position: right;
+}
+
+section .bottom {
+    margin-top: 4rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+}
+
+section .bottom .block {
+    padding: 1.5rem 2rem;
+    background-color: #E8F0FA;
+}
+
+section .bottom .row {
+    display: grid;
+}
+
+section .bottom .first-row {
+    grid-template-columns: 1.5fr 2fr 2fr 0.75fr;
+    gap: 2rem;
+}
+
+section .bottom .first-row .first {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+section .bottom .first-row .second,
+section .bottom .first-row .third {
+    border-radius: 5px;
+}
+
+section .bottom .first-row .second {
+  background-color: #BFDDEF;
+  color: var(--midnight-blue);
+  transform: rotate(-3.5deg);
+}
+
+section .bottom .first-row .third {
+    background-color: #EEDABE;
+    color: #D05F0D;
+    transform: rotate(1.5deg);
+}
+
+section .bottom .first-row .fourth {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+section .bottom .second-row {
+    grid-template-columns: 0.75fr 2fr 2fr 1.5fr;
+    gap: 2rem;
+}
+
+section .bottom .second-row .first {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+section .bottom .second-row .second,
+section .bottom .second-row .third {
+    border-radius: 5px;
+}
+
+section .bottom .second-row .second {
+    background-color: var(--midnight-blue);
+    color: #BFDDEF;
+}
+
+section .bottom .second-row .third {
+    background-color: #D05F0D;
+    color: var(--white);
+}
+
+section .bottom .second-row .fourth {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#catalogue {
+    background-color: #FAFCFF;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 1rem 5rem;
+    height: 70vh;
+}
+
+#catalogue .header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#catalogue .header h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--grey);
+}
+
+#catalogue .header .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#catalogue .header .text h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#catalogue .header .text p {
+    font-size: 0.85rem;
+    width: 35%;
+    text-align: right;
+}
+
+#catalogue .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+}
+
+@media (max-width: 600px) {
+    #hero {
+        padding-top: 7rem;
+        padding-bottom: 1rem;
+    }
+
+    section .top {
+        text-align: center;
+    }
+
+    section .top h2 {
+        font-size: 3rem;
+        width: 100%;
+        line-height: 3rem;
+    }
+
+    section .bottom {
+        margin-top: 2rem;
+        display: flex;
+        gap: 0.75rem;
+    }
+
+    section .bottom .block {
+        padding: 0.5rem 1rem;
+        background-color: #E8F0FA;
+    }
+
+    section .bottom .row {
+        display: grid;
+    }
+
+    section .bottom .first-row {
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+        gap: 0.75rem;
+    }
+
+    section .bottom .second-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+        padding: 0 0.25rem;
+    }
+
+    section .bottom .second-row .first,
+    section .bottom .second-row .fourth {
+        display: none;
+        font-size: 0.15rem;
+    }
+
+    section .bottom .second-row .second,
+    section .bottom .second-row .third {
+        font-size: 0.95rem;
+    }
+
+    #catalogue {
+        gap: 1.5rem;
+        flex-direction: column;
+        padding: 0.25rem 0.5rem;
+    }
+
+    #catalogue .header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #catalogue .header h3 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        padding: 0;
+    }
+
+    #catalogue .header .text {
+        align-items: flex-start;
+    }
+
+    #catalogue .header .text h4 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    #catalogue .header .text p {
+        font-size: 0.75rem;
+        width: 100%;
+        text-align: right;
+        color: var(--grey);
+    }
+
+    #catalogue .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+}

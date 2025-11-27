@@ -1,0 +1,36 @@
+<section id="hero">
+    <div class="top">
+        <h2>New School strategies for new brands.</h2>
+        <p>Sales. Branding. Social media. We build movements, not just brands.</p>
+        <a routerLink="" class="btn">Join us</a>
+    </div>
+    <div class="bottom">
+        <div class="row first-row">
+            <div class="block first"></div>
+            <div class="block second">Clarity</div>
+            <div class="block third">Authenticity</div>
+            <div class="block fourth"></div>
+        </div>
+        <div class="row second-row">
+            <div class="block first"></div>
+            <div class="block second">Action-Orientation</div>
+            <div class="block third">Community-Focused</div>
+            <div class="block fourth"></div>
+        </div>
+    </div>
+</section>
+
+<section id="catalogue">
+    <div class="header">
+        <h3>Our Plans</h3>
+        <div class="text">
+            <h4>Solutions for everyone</h4>
+            <p>We are here to help you, choose the best plan that suits you best. Your brand will be safe at all times.</p>
+        </div>
+    </div>
+    <div class="cards">
+        @for(card of cards; track card.title) {
+            <app-service [data]="card"/>
+        }
+    </div>
+</section>

@@ -1,0 +1,9 @@
+<div class="navbar">
+    <div class="left"><ion-icon name="logo-xbox"></ion-icon></div>
+    <ul>
+        @for(item of NAV_ITEMS; track item.id) {
+            <li><a [routerLink]="item.route" routerLinkActive="active">{{ item.name }}</a></li>
+        }
+    </ul>
+    <a routerLink="" class="btn">Get started</a>
+</div>
