@@ -20,6 +20,56 @@
     color: var(--grey);
 }
 
+#mission {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+    gap: 1rem;
+}
+
+#mission div {
+    background-color: #E8F0FA;
+    padding: 1.75rem 3.5rem;
+    border-radius: 7.5px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+#mission > :nth-child(2),
+#mission > :nth-child(13) {
+    background-color: var(--midnight-blue);
+    color: #E8F0FA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mission > :nth-child(2) span,
+#mission > :nth-child(13) span {
+    font-size: 1.25rem;
+}
+
+#mission > :nth-child(2) .dot,
+#mission > :nth-child(13) .dot {
+    width: 12.5px;
+    height: 12.5px;
+    border-radius: 50%;
+    background-color: #E8F0FA;
+}
+
+#mission > :nth-child(6) {
+    grid-column: span 2;
+    grid-row: span 3;
+    text-align: start;
+}
+
+#mission > :nth-child(17) {
+    grid-column: span 2;
+}
+
+#mission > :nth-child(17) {
+    grid-column: span 2;
+}
+
 #team {
     padding: 3rem 5rem 1rem 5rem;
     display: flex;
