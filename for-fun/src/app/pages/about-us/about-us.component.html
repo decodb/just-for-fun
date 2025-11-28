@@ -1,1 +1,27 @@
-<p>about-us works!</p>
+<section id="hero">
+    <h2>New School strategies for new brands.</h2>
+    <p>Sales. Branding. Social media. We build movements, not just brands.</p>
+</section>
+
+<section id="team">
+    <div class="team-header">
+        <div class="text">
+            <div class="dot"></div>
+            <h3>Meet our team</h3>
+        </div>
+        <h2>Here at AWS, we are a diverse group of dedicated
+            professionals committed to revolutionising the learning
+            industry.
+        </h2>
+        <div class="mission-text">
+            <div class="line"></div>
+            <p>Get to know the faces behind our mission.</p>
+        </div>
+    </div>
+
+    <div class="team-members">
+        @for(member of members; track member.id) {
+            <app-person [memberData]="member"/>
+        }
+    </div>
+</section>
